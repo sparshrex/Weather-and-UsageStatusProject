@@ -44,15 +44,15 @@ function UserTable() {
   }, []);
 
   const handleAddUser = () => {
-    // Implement logic to add a user to Firebase
+    
   };
 
   const handleDeleteUser = async (userId) => {
     try {
-      // Delete the user document from Firestore
+      
       await deleteDoc(doc(db, "users", userId));
 
-      // Update the local state to remove the deleted user
+      
       setUserData((prevData) => prevData.filter((user) => user.id !== userId));
 
       console.log("User deleted successfully");
@@ -62,17 +62,17 @@ function UserTable() {
   };
 
   const handleStatusChange = async (userId, currentStatus) => {
-    // Implement logic to change user status to inactive in Firebase
+  
     try {
-      // Determine the new status based on the current status
+      
       const newStatus = currentStatus === "active" ? "inactive" : "active";
 
       const userRef = doc(db, "users", userId);
       await updateDoc(userRef, {
-        status: newStatus, // Set the status to the new status
+        status: newStatus, 
       });
 
-      // Update the local state to reflect the change
+     
       setUserData((prevData) => {
         return prevData.map((user) => {
           if (user.id === userId) {
