@@ -1,0 +1,107 @@
+.main-page {
+  background-color: rgb(135, 209, 193);
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 100vh; /* Set the container height to match the viewport height */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.navbar {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: flex-end;
+  padding: 12px 12px;
+  background-color: rgba(0, 0, 0, 0.838);
+}
+
+.navbar h4 {
+  margin-right: 1%;
+  /* margin: 4px; */
+  color: rgb(240, 227, 227);
+}
+
+.navbar h2 {
+  margin-right: 20%;
+  color: rgba(233, 214, 214, 0.888);
+}
+
+.navbar button {
+  background-color: rgb(56, 104, 172);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  font-family: serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: medium;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+/* SIGNpage css */
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #93c9ff, rgb(234, 237, 228));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-sign {
+  text-align: center;
+  color: #fff;
+}
+
+.container-sign h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.sign-in-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #007acc;
+}
